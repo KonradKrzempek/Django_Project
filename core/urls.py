@@ -1,6 +1,6 @@
 from django.conf.urls import url
-from . import  views
+from . import  views as core_views
 
 urlpatterns = [
-    url(r'^signup/$', views.signup, name='signup'),
+    url('', core_views.home),
 ]

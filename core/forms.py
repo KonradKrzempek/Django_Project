@@ -6,8 +6,8 @@ from django.contrib.auth.models import User
 class SignUpForm(UserCreationForm):
     first_name = forms.CharField(max_length=30, required=True)
     last_name = forms.CharField(max_length=30, required=True)
-    email = forms.EmailField(max_length=254, required=True, help_text="Required. Insert a valid email addres")
+    email = forms.EmailField(max_length=254, required=True, help_text="Required. Insert a valid email address")
 
     class Meta:
-        mode = User
-        fields = ('username', 'first_name', 'last_name', 'email', 'password', 'password2',)
+        model = User
+        fields = ('username', 'first_name', 'last_name', 'email')
