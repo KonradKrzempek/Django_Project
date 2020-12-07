@@ -15,9 +15,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from core import views as core_views
+<<<<<<< HEAD
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('games/', include('games.urls'))
+    path('signup/', core_views.signup),
+    path('', include('core.urls'))
 ]
+>>>>>>> UserSignUp
+

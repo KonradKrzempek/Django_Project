@@ -37,7 +37,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+<<<<<<< HEAD
     'games.apps.GamesConfig',
+    'core.apps.CoreConfig',
+=======
+    
+>>>>>>> UserSignUp
 ]
 
 MIDDLEWARE = [
@@ -56,7 +61,9 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            os.path.join(BASE_DIR, 'templates')
+<<<<<<< HEAD
+            os.path.join(BASE_DIR, 'templates'),
+>>>>>>> UserSignUp
         ],
         'APP_DIRS': True,
         'OPTIONS': {
