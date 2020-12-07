@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'games.apps.GamesConfig',
     'core.apps.CoreConfig',
 =======
-    
+
 >>>>>>> UserSignUp
 ]
 
