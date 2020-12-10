@@ -22,7 +22,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('games/', include('games.urls')),
     path('signup/', core_views.signup),
-    path('', include('core.urls'))
+    path('', include('core.urls'), name='home')
 ]
 
 
