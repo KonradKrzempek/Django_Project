@@ -16,7 +16,7 @@ class CustomerInLine(admin.StackedInline):
 
 class UserAdmin(UserAdmin):
     inlines = (CustomerInLine, )
-    list_display = ('username', 'email', 'date_of_birth')
+    list_display = ('username', 'email', 'get_date_of_birth')
 
     def get_inline_instances(self, request, obj = None):
         if not obj:
