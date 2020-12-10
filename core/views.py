@@ -10,6 +10,7 @@ def home(request):
 
 
 def signup(request):
+    context = {}
     if request.POST:
         form = SignUpForm(request.POST)
         if form.is_valid():
@@ -19,7 +20,10 @@ def signup(request):
             user = authenticate(username=username, password=raw_password)
             login(request, user)
             return redirect('home')
+        else:
+            context['sign_up_form'] = form
     else:
         form = SignUpForm()
-    return render(request, 'signup.html', {'form': form})
+        context['sign_up_form'] = form
+    return render(request, 'signup.html', context)
 
