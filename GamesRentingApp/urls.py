@@ -23,6 +23,7 @@ urlpatterns = [
     path('games/', include('games.urls')),
     path('signup/', core_views.signup, name='signup'),
     path('logout/', core_views.logout_view, name='logout'),
+    path('login/', core_views.login_view, name='login'),
     path('', include('core.urls')),
 ]
 
