@@ -2,7 +2,7 @@
 
 {%block content%}
 
-<h1>Games</h1>
+<h1 style="color:#cccccc;">Gry</h1>
 <div class="row">
     {% for game in games %} <!-- template tag tak to się w Django nazywa -->
         <div class="col">
@@ -11,7 +11,10 @@
             <div class="card-body">
                 <h5 class="card-title">{{ game.title }}</h5>
                 <p class="card-text">${{ game.price }}</p>
-                <a href="#" class="btn btn-primary">Show more</a>
+                 <a class="btn btn-primary"  data-toggle="collapse" data-target="#program">Show more</a>
+                <div id="program" class="collapse">
+                     <p class="card-text">{{ game.description }}</p>
+                </div>
             </div>
         </div>
     </div>
