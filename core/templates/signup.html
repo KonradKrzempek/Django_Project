@@ -1,8 +1,8 @@
 {% extends 'base.html' %}
 
 {% block content %}
-  <h2>Sign up</h2>
-  <form method="post">{% csrf_token %}
+  <h2 style="color:#cccccc;">Sign up</h2>
+  <form style="color:#cccccc;" method="post">{% csrf_token %}
     {% for field in sign_up_form %}
       <p>
         {{ field.label_tag }}<br>
