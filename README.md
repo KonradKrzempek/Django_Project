@@ -1,1 +1,1 @@
-"# IO_2020" 
+Django Project by Konrad Krzempek & Michał Krzemień 
