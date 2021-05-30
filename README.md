@@ -1,1 +1,1 @@
-#Django Project by Konrad Krzempek & Michał Krzemień 
+# Django Project by Konrad Krzempek & Michał Krzemień 
