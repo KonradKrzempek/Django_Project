@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     'games.apps.GamesConfig',
     'core.apps.CoreConfig',
+    'pay.apps.PayConfig',
 
 ]
 
