@@ -1,7 +1,7 @@
 # Django Project 
 ###### by Konrad Krzempek & Michał Krzemień 
 
-Projekt przedstawia przykładową stronę internetową sklepu z grami opartą na templatce Django
+Projekt przedstawia przykładową stronę internetową sklepu z grami opartą na templatce Django.
 W projekcie zostały zaimplementowane poniższe funkcjonalności:
 
 - Panel administracji
